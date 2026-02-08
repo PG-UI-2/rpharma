@@ -1,0 +1,75 @@
+[
+    {
+        "id": 1,
+        "name": "R.FEXO-M",
+        "description": "Anti-allergy & asthma relief",
+        "price": 250.00,
+        "icon": "R. Fexo-M",
+        "category": "tablets",
+        "details": "A combination of Montelukast Sodium and Fexofenadine Hydrochloride. Effective for allergic rhinitis, seasonal allergies, and asthma relief. Provides fast relief and is typically taken once daily in the evening."
+    },
+    {
+        "id": 2,
+        "name": "R. PRO.D",
+        "description": "Acidity, heartburn & nausea relief",
+        "price": 185.00,
+        "icon": "R. Pro. D",
+        "category": "capsules",
+        "details": "Contains Pantoprazole (Gastro-resistant) and Domperidone (Prolonged-release). Used to treat GERD, acid reflux, and indigestion. Helps control nausea and vomiting while improving digestive comfort. Best taken before meals."
+    },
+    {
+        "id": 3,
+        "name": "R. CAL.D",
+        "description": "Bone strength & Calcium absorption",
+        "price": 196.00,
+        "icon": "R. Cal D",
+        "category": "tablets",
+        "details": "Formulated with Calcium Orotate (740mg) and Vitamin D3 (1000 IU). Supports bone density, enhances calcium absorption, and supports the immune system. Suitable for kids, adults, the elderly, and pregnant women."
+    },
+    {
+        "id": 4,
+        "name": "R.GOLD",
+        "description": "Daily energy & vitality booster",
+        "price": 150.00,
+        "icon": "R. Gold",
+        "category": "capsules",
+        "details": "A premium blend of Ginseng Extract powder, multivitamins, and essential minerals. Designed to boost stamina, support immunity, and aid in daily recovery. Recommended for working professionals, fitness lovers, and the elderly."
+    },
+    {
+        "id": 5,
+        "name": "R.XT",
+        "description": "Iron & Hemoglobin supplement",
+        "price": 165.00,
+        "icon": "R. XT",
+        "category": "tablets",
+        "details": "Contains Ferrous Ascorbate, Folic Acid, and Zinc. Helps increase hemoglobin levels, reduces fatigue and weakness, and fights dizziness. Highly recommended for growing adolescents and supporting prenatal health."
+    },
+    {
+        "id": 6,
+        "name": "R NEURO-OD",
+        "description": "Nerve health & nutritional support",
+        "price": 210.00,
+        "icon": "R. Neuro OD",
+        "category": "capsules",
+        "details": "Advanced softgel capsules containing Methylcobalamin, Benfotiamine, Alpha Lipoic Acid, Pyridoxine Hydrochloride, Inositol, and Folic Acid. Supports neurological health and provides essential B-vitamin supplementation."
+    },
+    {
+        "id": 7,
+        "name": "R. AIROLYN",
+        "description": "Respiratory health & lung support",
+        "price": 50.00,
+        "icon": "R. Airolyn",
+        "category": "tablets",
+        "details": "an herbal-formulated soft gelatin capsule used for steam inhalation to provide relief from respiratory congestion."
+    },
+    {
+        "id": 8,
+        "name": "KOFRELIEF",
+        "description": "Cough relief & respiratory support",
+        "price": 199.00,
+        "icon": "Kofrelief",
+        "category": "syrups",
+        "details": "A combination of herbal extracts and active ingredients designed to provide relief from cough, cold, and respiratory discomfort."
+    }
+
+]

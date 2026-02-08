@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Detailed product information for R. Pharma Exports medicines and pharmaceutical products.">
+    <meta name="keywords" content="medicine, pharmaceutical, product details, healthcare">
+    <title>Product Details - R. Pharma Exports | Professional Healthcare Solutions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        /* Product Detail Specific Styles */
+        .breadcrumb {
+            padding: 1rem 0;
+            font-size: 0.9rem;
+            color: #666;
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+        }
+
+        .breadcrumb a {
+            color: var(--primary-color);
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .product-detail-container {
+            background: var(--bg-white);
+            border-radius: var(--radius-lg);
+            padding: 2rem;
+            margin: 2rem 0;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .product-detail-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+
+        .product-detail-image {
+            width: 100%;
+            height: 400px;
+            background: linear-gradient(135deg, var(--primary-light) 0%, var(--secondary-color) 50%, var(--accent-gold) 100%);
+            border-radius: var(--radius-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 8rem;
+            box-shadow: var(--shadow-md);
+        }
+
+        .product-detail-info h1 {
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+        }
+
+        .product-meta {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid var(--border-color);
+            flex-wrap: wrap;
+        }
+
+        .meta-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .meta-label {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .meta-value {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-top: 0.25rem;
+        }
+
+        .product-price-display {
+            font-size: 2rem;
+            color: var(--accent-red);
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+
+        .product-description-full {
+            font-size: 1.05rem;
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        .product-features {
+            background: var(--bg-light);
+            padding: 1.5rem;
+            border-radius: var(--radius-md);
+            margin-bottom: 2rem;
+        }
+
+        .product-features h3 {
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .feature-list {
+            list-style: none;
+        }
+
+        .feature-list li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            color: var(--text-secondary);
+        }
+
+        .feature-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--secondary-color);
+            font-weight: 700;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .action-buttons .btn {
+            flex: 1;
+            min-width: 150px;
+        }
+
+        .product-cta {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
+            color: white;
+            padding: 1.5rem;
+            border-radius: var(--radius-md);
+            text-align: center;
+        }
+
+        .product-cta h3 {
+            color: white;
+            margin-bottom: 0.5rem;
+        }
+
+        .product-cta p {
+            color: rgba(255, 255, 255, 0.9);
+            margin: 0;
+        }
+
+        .related-products-section {
+            padding: 4rem 0;
+            background: var(--bg-light);
+        }
+
+        .related-products-section h2 {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            .product-detail-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .product-detail-image {
+                height: 300px;
+                font-size: 5rem;
+            }
+
+            .product-detail-info h1 {
+                font-size: 1.8rem;
+            }
+
+            .product-price-display {
+                font-size: 1.5rem;
+            }
+
+            .meta-item {
+                flex: 1;
+                min-width: 150px;
+            }
+
+            .action-buttons {
+                flex-direction: column;
+            }
+
+            .action-buttons .btn {
+                width: 100%;
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation Header -->
+    <header class="navbar" role="banner">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="../index.html" class="logo-link">
+                        <span class="logo-icon">💊</span>
+                        <span class="logo-text">R. Pharma Exports</span>
+                    </a>
+                </div>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
+                <nav class="nav-menu" role="navigation" aria-label="Main navigation">
+                    <a href="../index.html" class="nav-link active">Home</a>
+                    <a href="index.html" class="nav-link active">Products</a>
+                    <a href="../about/index.html" class="nav-link active">About</a>
+                    <a href="../contact/index.html" class="nav-link active">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content" role="main">
+        <!-- Product Details Section -->
+        <section class="product-detail-section" style="padding: 2rem 0;">
+            <div class="container">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <a href="../index.html">Home</a>
+                    <span>/</span>
+                    <a href="index.html">Products</a>
+                    <span>/</span>
+                    <span id="breadcrumbProduct">Product</span>
+                </nav>
+                
+                <div class="product-detail-container" id="productDetail">
+                    <!-- Product details will be loaded here by JavaScript -->
+                    <div style="text-align: center; padding: 3rem; color: #666;">
+                        <p>Loading product details...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Related Products -->
+        <section class="related-products-section">
+            <div class="container">
+                <h2>Related Products</h2>
+                <p class="section-subtitle">Similar medicines and healthcare solutions</p>
+                <div class="products-grid" id="relatedProducts" role="list">
+                    <!-- Related products will be loaded here -->
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About Company</h4>
+                    <ul>
+                        <li><a href="../about/index.html">Company Info</a></li>
+                        
+                       
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="index.html">Browse Products</a></li>
+                        
+                        
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="../contact/index.html">Contact Us</a></li>
+                        
+                        
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023-2026 R. Pharma Exports. All rights reserved. | Powered by Pratham G.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="../script.js" defer></script>
+    <script src="product-detail.js" defer></script>
+</body>
+</html>
