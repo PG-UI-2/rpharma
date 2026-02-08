@@ -80,7 +80,7 @@ const ProductDetailPage = (() => {
                 const carouselContainer = container.querySelector('.product-detail-carousel');
                 if (carouselContainer) {
                     const urls = await Carousel.probeImages(carouselContainer.dataset.folder || '');
-                    Carousel.create(carouselContainer, urls, { auto: false, controls: true, interval: 3000 });
+                    Carousel.create(carouselContainer, urls, { auto: false, controls: true, interval: 5000 });
                 }
             } catch (e) {
                 // ignore
@@ -125,7 +125,7 @@ const ProductDetailPage = (() => {
                 const nodes = container.querySelectorAll('.product-image-carousel');
                 await Promise.all(Array.from(nodes).map(async (node) => {
                     const urls = await Carousel.probeImages(node.dataset.folder || '');
-                    Carousel.create(node, urls, { auto: true, interval: 2200, controls: false });
+                    Carousel.create(node, urls, { auto: true, interval: 5000, controls: false });
                 }));
             } catch (e) {
                 // ignore

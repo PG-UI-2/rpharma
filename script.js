@@ -201,7 +201,7 @@ const Carousel = (() => {
     }
 
     function create(container, urls = [], opts = {}) {
-        const { auto = true, interval = 2500, controls = false } = opts;
+        const { auto = true, interval = 5000, controls = false } = opts;
         if (!container) return;
         container.innerHTML = '';
 
@@ -272,7 +272,7 @@ const Carousel = (() => {
         await Promise.all(Array.from(nodes).map(async (node) => {
             const folder = node.dataset.folder || '';
             const urls = await probeImages(folder);
-            create(node, urls, { auto: true, interval: 2200, controls: false });
+            create(node, urls, { auto: true, interval: 5000, controls: false });
         }));
     }
 
