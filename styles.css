@@ -152,7 +152,7 @@ a:hover {
    Navigation Header
    ============================================================ */
 .navbar {
-    background: linear-gradient(90deg, #FF0000 0%, #CC0000 100%);
+    background: linear-gradient(90deg, #FFA500 0%, #FF8C00 100%);
     box-shadow: var(--shadow-md);
     position: sticky;
     top: 0;
