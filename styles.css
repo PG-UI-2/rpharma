@@ -1025,3 +1025,50 @@ a:hover {
         background: white;
     }
 }
+
+/* ============================================================
+   WhatsApp Floating Button
+   ============================================================ */
+.whatsapp-fab {
+    position: fixed;
+    right: 18px;
+    bottom: 18px;
+    z-index: 1100;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+.whatsapp-fab a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    background: #25D366;
+    color: white;
+    padding: 0.65rem 0.9rem;
+    border-radius: 999px;
+    box-shadow: 0 6px 18px rgba(37, 211, 102, 0.18);
+    font-weight: 700;
+    text-decoration: none;
+    transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+.whatsapp-fab a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(37, 211, 102, 0.24);
+}
+.whatsapp-fab .whatsapp-label {
+    display: none;
+}
+@media (min-width: 640px) {
+    .whatsapp-fab .whatsapp-label { display: inline-block; }
+}
+
+/* Export & Bulk banner */
+.export-bulk {
+    background: linear-gradient(90deg, rgba(0,82,204,0.04), rgba(6,167,125,0.03));
+    border: 1px solid var(--border-color);
+    padding: 1.25rem 0;
+    margin-top: -1rem;
+    text-align: center;
+}
+.export-bulk h2 { margin: 0; font-size: 1.25rem; color: var(--primary-color); }
+.export-bulk p { margin: 0.25rem 0 0; color: var(--text-secondary); }
